@@ -1,0 +1,10 @@
+{
+  "name": "jest-global-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "leiming <poetcoder@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lerna": "^2.10.1"
+  }
+}
