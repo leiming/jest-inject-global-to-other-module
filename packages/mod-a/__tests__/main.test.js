@@ -2,11 +2,11 @@ const main = require("../main");
 
 describe("Env", () => {
   test("getMyENV", () => {
-    expect(main.getMyENV()).toEqual(true)
+    expect(main.getMyENV()).toEqual("abc")
   });
 
   test("getModuleENV", () => {
      //will throw error
-     expect(main.getModuleENV()).toEqual(true)
+     expect(main.getModuleENV()).toEqual("abc")
   });
 });
