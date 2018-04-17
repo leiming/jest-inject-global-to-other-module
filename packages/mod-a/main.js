@@ -1,11 +1,17 @@
-import { getMyHref } from '@someone/mod-b'
+const { getENV } =  require('@someone/mod-b')
 
-export const getHref = () => {
-  console.log(location.href)
-  return location.href
+const getMyENV = () => {
+  // It works
+  return __DEV__
 }
 
-export const getModuleHref = () => {
+const getModuleENV = () => {
+  // Bad
+  const env = getENV()
+  console.log(env)
+}
 
-  return getMyHref()
+module.exports = {
+  getMyENV,
+  getModuleENV,
 }

@@ -1,15 +1,12 @@
-import {getHref, getModuleHref} from "../main";
+const main = require("../main");
 
-
-describe("Location", () => {
-  jsdom.reconfigure({
-    url: "https://www.google.com/"
-  });
-  test("getHref", () => {
-    expect(getHref()).toEqual('https://www.google.com/')
+describe("Env", () => {
+  test("getMyENV", () => {
+    expect(main.getMyENV()).toEqual(true)
   });
 
-  test("getMyHref", () => {
-    expect(getModuleHref()).toEqual('https://www.google.com/')
+  test("getModuleENV", () => {
+     //will throw error
+     expect(main.getModuleENV()).toEqual(true)
   });
 });
