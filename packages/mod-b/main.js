@@ -1,7 +1,5 @@
-
 const getENV = () => {
-  console.log(__DEV__)
-  return __DEV___
+  return __DEV__
 }
 
 module.exports = {

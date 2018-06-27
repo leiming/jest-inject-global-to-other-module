@@ -1,19 +1,17 @@
-const { getENV } =  require('@someone/mod-b')
+const { getENV } = require('@someone/mod-b')
 
-const getMyENV = () => {
+const getGlobal = () => {
   // Good, it works well
-  console.log(__DEV__)
   return __DEV__
 }
 
-const getModuleENV = () => {
+const getGlobalByModule = () => {
   // Bad, throw `ReferenceError: __DEV___ is not defined`
   const env = getENV()
-  console.log(env)
   return env
 }
 
 module.exports = {
-  getMyENV,
-  getModuleENV,
+  getGlobal,
+  getGlobalByModule,
 }

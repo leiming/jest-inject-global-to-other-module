@@ -10,7 +10,7 @@ cd packages/mod-a
 yarn test
 ```
 
-```javascript
+```
 $ jest
  FAIL  __tests__/main.test.js
   Env

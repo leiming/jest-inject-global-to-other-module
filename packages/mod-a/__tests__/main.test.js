@@ -1,13 +1,13 @@
 const main = require("../main");
 
 describe("Env", () => {
-  test("getMyENV", () => {
+  test("getGlobal", () => {
     // It works
-    expect(main.getMyENV()).toEqual("abc")
+    expect(main.getGlobal()).toEqual("abc");
   });
 
-  test("getModuleENV", () => {
-     //will throw error
-     expect(main.getModuleENV()).toEqual("abc")
+  test("getGlobalByModule", () => {
+    // will throw error
+    expect(main.getGlobalByModule()).toEqual("abc")
   });
 });
